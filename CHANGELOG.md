@@ -2,7 +2,7 @@
 
 Registo de mudanças da landing page ORBIA (fork de `melgarafael/deskcomm-site`).
 
-## 0.1.0 — 2026-11-25
+## [0.1.0] — 2026-11-25
 
 ### Adicionado
 
