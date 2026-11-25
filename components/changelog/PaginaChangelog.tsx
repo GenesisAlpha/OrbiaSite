@@ -27,7 +27,7 @@ function resumir(v: Versao): ResumoVersao {
 /** Link do Google Tradutor para a própria página — a saída para quem não lê português. */
 export function linkDeTraducao(caminho: string, idioma: Idioma): string {
   const alvo = idioma === "es" ? "es" : "en";
-  return `https://www-deskcomm-com-br.translate.goog${caminho}?_x_tr_sl=pt&_x_tr_tl=${alvo}&_x_tr_hl=${alvo}`;
+  return `https://www-orbia-live.translate.goog${caminho}?_x_tr_sl=pt&_x_tr_tl=${alvo}&_x_tr_hl=${alvo}`;
 }
 
 export function AvisoDeIdioma({ idioma, caminho }: { idioma: Idioma; caminho: string }) {

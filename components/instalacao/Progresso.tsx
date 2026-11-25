@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { ETAPAS_INSTALACAO } from "@/conteudo/instalacao";
 
 /** Só ids de etapas ficam neste navegador; nenhuma credencial passa pela página. */
-const CHAVE = "deskcomm-guia-instalacao-v1";
+const CHAVE = "orbia-guia-cloud-v1";
 
 export function ProgressoInstalacao() {
   const [concluidas, setConcluidas] = useState<string[]>([]);

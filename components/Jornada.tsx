@@ -16,6 +16,8 @@ export function Jornada({ c }: { c: Conteudo }) {
     texto: p.texto,
   }));
   const { alvo, progresso, passo: ativo } = usarProgresso(PASSOS.length);
+  // A ref é contínua (sem render por quadro); o passo discreto é o sinal de leitura.
+  const progressoVisivel = (ativo + 0.5) / PASSOS.length;
 
   return (
     <section id="jornada" className="border-t border-border bg-surface-elevated/40">
@@ -53,7 +55,7 @@ export function Jornada({ c }: { c: Conteudo }) {
                 </li>
               ))}
             </ol>
-            <div className="min-w-0"><Mesa progresso={progresso} /></div>
+            <div className="min-w-0"><Mesa progresso={progressoVisivel} /></div>
           </div>
         </div>
       </div>

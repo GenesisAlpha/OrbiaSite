@@ -122,9 +122,9 @@ test("curso: HTML anuncia seu idioma, canonical, alternates e oferece troca de i
     const manifestoCapturas = idioma === "es" ? lerCapturasEspanhol(new URL("../", import.meta.url), curso.dados) : null;
     const html = montarCursoLocalizado(fonte, idioma, { ...catalogos[idioma], manifestoCapturas });
     assert.match(html, new RegExp(`<html lang="${idioma}">`));
-    assert.ok(html.includes(`rel="canonical" href="https://www.deskcomm.com.br${CAMINHOS_CURSO[idioma]}"`));
+    assert.ok(html.includes(`rel="canonical" href="https://www.orbia.live${CAMINHOS_CURSO[idioma]}"`));
     for (const i of IDIOMAS_CURSO) {
-      assert.ok(html.includes(`hreflang="${i}" href="https://www.deskcomm.com.br${CAMINHOS_CURSO[i]}"`));
+      assert.ok(html.includes(`hreflang="${i}" href="https://www.orbia.live${CAMINHOS_CURSO[i]}"`));
       assert.ok(html.includes(`data-idioma-curso="${CAMINHOS_CURSO[i]}"`));
     }
     assert.match(html, /link\.dataset\.idiomaCurso \+ location\.hash/, "preserva aula e cena ao trocar idioma");

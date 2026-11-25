@@ -14,7 +14,7 @@ com quem não programa e quer colocar o CRM no próprio servidor.
 
 Site público separado do CRM: apresentar o produto, ensinar a instalar e usar,
 e encaminhar para o código e a hospedagem. O resultado esperado deste guia é
-chegar do servidor ao primeiro acesso, WhatsApp conectado e configuração da IA.
+chegar do servidor ao primeiro acesso, canais de atendimento conectado e configuração da IA.
 
 ## Brand Personality
 

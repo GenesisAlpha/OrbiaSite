@@ -3,7 +3,7 @@ import type { Idioma } from "./tipos";
 /**
  * A página "Guias do assistente" — para devs e para quem instala.
  *
- * Catálogo público dos guias do DeskcommCRM, atualizado na data de
+ * Catálogo público dos guias do ORBIA, atualizado na data de
  * `GUIAS_ATUALIZADO_EM` (abaixo, e é ela que o rodapé mostra — uma data só):
  * os guias `deskcomm-*` em `.agents/skills/` (espelho em `.claude/skills/`),
  * o `scripts/instalar-guias.sh` e o comportamento de cada assistente — medido
@@ -99,11 +99,11 @@ export type TextosGuias = {
 /** A data que o rodapé da página de guias mostra. Mudou o texto desta página? Mude esta data. */
 export const GUIAS_ATUALIZADO_EM = "2026-10-27";
 
-const COMANDO = "curl -fsSL https://raw.githubusercontent.com/melgarafael/DeskcommCRM/main/scripts/instalar-guias.sh | bash";
+const COMANDO = "curl -fsSL https://raw.githubusercontent.com/melgarafael/ORBIA/main/scripts/instalar-guias.sh | bash";
 export const COMANDOS = {
   instalar: COMANDO,
   remover: `${COMANDO} -s -- --remover`,
-  clonar: "git clone https://github.com/melgarafael/DeskcommCRM.git\ncd DeskcommCRM",
+  clonar: "git clone https://github.com/melgarafael/ORBIA.git\ncd ORBIA",
   sincronizar: "pnpm skills:sync",
   testar: "pnpm test:unit tests/unit/skills-embutidas.test.ts",
   fonte: "bash scripts/instalar-guias.sh --fonte .",
@@ -115,12 +115,12 @@ export const COMANDOS = {
 
 const pt: TextosGuias = {
   meta: {
-    titulo: "Guias do assistente — DeskcommCRM",
+    titulo: "Guias do assistente — ORBIA",
     descricao:
-      "Guias para instalar, configurar, analisar e melhorar o DeskcommCRM com seu assistente de código, contribuir com o projeto e manter o curso atualizado. O que cada guia faz e como usar.",
+      "Guias para instalar, configurar, analisar e melhorar o ORBIA com seu assistente de código, contribuir com o projeto e manter o curso atualizado. O que cada guia faz e como usar.",
   },
   sobretitulo: "Guias do assistente",
-  titulo: "O seu assistente de código já sabe trabalhar no DeskcommCRM.",
+  titulo: "O seu assistente de código já sabe trabalhar no ORBIA.",
   subtitulo:
     "Os guias ensinam Claude Code, Codex, Cursor, Antigravity e OpenCode a instalar, montar um cliente, ler as métricas, afinar o agente de IA, contribuir com o código e manter o curso atualizado — seguindo as regras do projeto. Você não precisa decorar nome nenhum: diga o que quer e o guia certo entra sozinho.",
   ctaInstalar: "Instalar os guias",
@@ -131,7 +131,7 @@ const pt: TextosGuias = {
   terminal: {
     pasta: "~/meu-negocio",
     voce: "você",
-    pedido: "quero instalar o CRM na minha VPS da HostGator",
+    pedido: "quero instalar o CRM na minha VPS da provedor de nuvem",
     usando: "usando o guia deskcomm-instalar",
     passos: ["confere Docker, domínio e DNS", "pede a connection string do Supabase", "roda o install.sh e acompanha cada etapa"],
   },
@@ -176,7 +176,7 @@ const pt: TextosGuias = {
       atualizar: "Para atualizar, rode o mesmo comando de novo.",
       remover: "Para desfazer:",
       detalhes: [
-        "Guarda uma cópia só dos guias em ~/.deskcomm/guias.",
+        "Guarda uma cópia só dos guias em ~/.orbia/guias.",
         "Liga cada guia nas pastas que os assistentes leem: ~/.claude/skills, ~/.agents/skills e ~/.gemini/config/skills.",
         "Nunca apaga uma skill sua com o mesmo nome: avisa e pula.",
       ],
@@ -218,7 +218,7 @@ const pt: TextosGuias = {
       id: "deskcomm-instalar",
       publico: "opera",
       titulo: "Instalar e operar",
-      resumo: "Coloca o CRM no ar numa VPS e cuida dele depois: atualização, backup, domínio, WhatsApp e os erros da instalação.",
+      resumo: "Coloca o CRM no ar numa VPS e cuida dele depois: atualização, backup, domínio, canais de atendimento e os erros da instalação.",
       paraQuem: "Quem instala, mesmo sem ser técnico, agências e quem opera uma VPS.",
       faz: ["Conduz a instalação passo a passo e roda os scripts do kit.", "Resolve cadeado/SSL, DNS, Supabase, proxy e chave de IA.", "Atualiza, faz backup e restaura."],
       frases: ["quero instalar o CRM na minha VPS", "o cadeado do site não aparece", "como faço backup?"],
@@ -369,12 +369,12 @@ const pt: TextosGuias = {
 
 const en: TextosGuias = {
   meta: {
-    titulo: "Assistant guides — DeskcommCRM",
+    titulo: "Assistant guides — ORBIA",
     descricao:
-      "Guides for installing, configuring, analyzing and improving DeskcommCRM with your coding assistant, contributing to the project and keeping the course current. What each guide does and how to use it.",
+      "Guides for installing, configuring, analyzing and improving ORBIA with your coding assistant, contributing to the project and keeping the course current. What each guide does and how to use it.",
   },
   sobretitulo: "Assistant guides",
-  titulo: "Your coding assistant already knows how to work on DeskcommCRM.",
+  titulo: "Your coding assistant already knows how to work on ORBIA.",
   subtitulo:
     "The guides teach Claude Code, Codex, Cursor, Antigravity and OpenCode to install the CRM, set up a client, read the metrics, tune the AI agent, contribute code and keep the course current — following the project's rules. No names to memorize: say what you want and the right guide kicks in on its own.",
   ctaInstalar: "Install the guides",
@@ -430,7 +430,7 @@ const en: TextosGuias = {
       atualizar: "To update, run the same command again.",
       remover: "To undo:",
       detalhes: [
-        "Keeps a copy of just the guides in ~/.deskcomm/guias.",
+        "Keeps a copy of just the guides in ~/.orbia/guias.",
         "Links each guide into the folders assistants read: ~/.claude/skills, ~/.agents/skills and ~/.gemini/config/skills.",
         "Never deletes a skill of yours with the same name: it warns and skips it.",
       ],
@@ -472,7 +472,7 @@ const en: TextosGuias = {
       id: "deskcomm-instalar",
       publico: "opera",
       titulo: "Install and operate",
-      resumo: "Gets the CRM running on a VPS and looks after it: updates, backups, domain, WhatsApp and installation errors.",
+      resumo: "Gets the CRM running on a VPS and looks after it: updates, backups, domain, canais de atendimento and installation errors.",
       paraQuem: "People who install it — technical or not — agencies and VPS operators.",
       faz: ["Walks you through the installation and runs the kit's scripts.", "Fixes SSL, DNS, Supabase, proxy and AI key issues.", "Updates, backs up and restores."],
       frases: ["I want to install the CRM on my VPS", "my site has no padlock", "how do I back it up?"],
@@ -620,12 +620,12 @@ const en: TextosGuias = {
 
 const es: TextosGuias = {
   meta: {
-    titulo: "Guías del asistente — DeskcommCRM",
+    titulo: "Guías del asistente — ORBIA",
     descricao:
-      "Guías para instalar, configurar, analizar y mejorar DeskcommCRM con tu asistente de código, contribuir al proyecto y mantener el curso actualizado. Qué hace cada guía y cómo usarla.",
+      "Guías para instalar, configurar, analizar y mejorar ORBIA con tu asistente de código, contribuir al proyecto y mantener el curso actualizado. Qué hace cada guía y cómo usarla.",
   },
   sobretitulo: "Guías del asistente",
-  titulo: "Tu asistente de código ya sabe trabajar en DeskcommCRM.",
+  titulo: "Tu asistente de código ya sabe trabajar en ORBIA.",
   subtitulo:
     "Las guías enseñan a Claude Code, Codex, Cursor, Antigravity y OpenCode a instalar el CRM, configurar un cliente, leer las métricas, afinar el agente de IA, contribuir con el código y mantener el curso actualizado — siguiendo las reglas del proyecto. No tienes que memorizar nombres: di lo que quieres y la guía correcta entra sola.",
   ctaInstalar: "Instalar las guías",
@@ -681,7 +681,7 @@ const es: TextosGuias = {
       atualizar: "Para actualizar, ejecuta el mismo comando otra vez.",
       remover: "Para deshacer:",
       detalhes: [
-        "Guarda una copia solo de las guías en ~/.deskcomm/guias.",
+        "Guarda una copia solo de las guías en ~/.orbia/guias.",
         "Enlaza cada guía en las carpetas que leen los asistentes: ~/.claude/skills, ~/.agents/skills y ~/.gemini/config/skills.",
         "Nunca borra una skill tuya con el mismo nombre: avisa y la salta.",
       ],
@@ -723,7 +723,7 @@ const es: TextosGuias = {
       id: "deskcomm-instalar",
       publico: "opera",
       titulo: "Instalar y operar",
-      resumo: "Pone el CRM en línea en un VPS y lo cuida después: actualizaciones, respaldos, dominio, WhatsApp y los errores de instalación.",
+      resumo: "Pone el CRM en línea en un VPS y lo cuida después: actualizaciones, respaldos, dominio, canais de atendimento y los errores de instalación.",
       paraQuem: "Quien instala, aunque no sea técnico, agencias y quien opera un VPS.",
       faz: ["Guía la instalación paso a paso y ejecuta los scripts del kit.", "Resuelve SSL, DNS, Supabase, proxy y clave de IA.", "Actualiza, respalda y restaura."],
       frases: ["quiero instalar el CRM en mi VPS", "mi sitio no tiene el candado", "¿cómo hago un respaldo?"],

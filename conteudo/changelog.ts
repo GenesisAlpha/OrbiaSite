@@ -40,13 +40,13 @@ export type TextosChangelog = {
 const pt: TextosChangelog = {
   locale: "pt-BR",
   meta: {
-    titulo: "Changelog — DeskcommCRM",
-    descricao: "Todas as versões do DeskcommCRM: o que ganhou, o que mudou, o que foi corrigido e o que pede atenção antes de atualizar.",
-    tituloVersao: "Versão {v} — Changelog do DeskcommCRM",
-    descricaoVersao: "O que mudou na versão {v} do DeskcommCRM, publicada em {d}.",
+    titulo: "Changelog — ORBIA",
+    descricao: "Todas as versões do ORBIA: o que ganhou, o que mudou, o que foi corrigido e o que pede atenção antes de atualizar.",
+    tituloVersao: "Versão {v} — Changelog do ORBIA",
+    descricaoVersao: "O que mudou na versão {v} do ORBIA, publicada em {d}.",
   },
   sobretitulo: "Changelog",
-  titulo: "Tudo o que mudou no DeskcommCRM, versão por versão.",
+  titulo: "Tudo o que mudou no ORBIA, versão por versão.",
   subtitulo:
     "Cada versão conta o que ganhou, o que mudou e o que foi corrigido — e, quando é o caso, o que você precisa fazer antes de atualizar a sua instalação.",
   aviso: null,
@@ -56,7 +56,7 @@ const pt: TextosChangelog = {
   filtros: {
     rotulo: "Filtrar por tipo de mudança",
     todas: "Todas",
-    busca: "Buscar nas versões — ex.: WhatsApp, agenda, instalação",
+    busca: "Buscar nas versões — ex.: canais de atendimento, agenda, instalação",
     nenhuma: "Nenhuma versão encontrada com esse filtro.",
     limpar: "Limpar filtros",
     resultado: (n) => (n === 1 ? "1 versão" : `${n} versões`),
@@ -81,18 +81,18 @@ const pt: TextosChangelog = {
 const en: TextosChangelog = {
   locale: "en-US",
   meta: {
-    titulo: "Changelog — DeskcommCRM",
-    descricao: "Every DeskcommCRM release: what was added, what changed, what was fixed and what needs your attention before updating.",
-    tituloVersao: "Version {v} — DeskcommCRM changelog",
-    descricaoVersao: "What changed in DeskcommCRM version {v}, released on {d}.",
+    titulo: "Changelog — ORBIA",
+    descricao: "Every ORBIA release: what was added, what changed, what was fixed and what needs your attention before updating.",
+    tituloVersao: "Version {v} — ORBIA changelog",
+    descricaoVersao: "What changed in ORBIA version {v}, released on {d}.",
   },
   sobretitulo: "Changelog",
-  titulo: "Everything that changed in DeskcommCRM, release by release.",
+  titulo: "Everything that changed in ORBIA, release by release.",
   subtitulo:
     "Each release tells you what was added, what changed and what was fixed — and, when it matters, what you need to do before updating your installation.",
   aviso: {
     texto:
-      "The release notes are written in Portuguese, the language DeskcommCRM is built in. Your browser can translate them, or you can open this page already translated.",
+      "The release notes are written in Portuguese, the language ORBIA is built in. Your browser can translate them, or you can open this page already translated.",
     traduzir: "Open in Google Translate",
   },
   maisRecente: "Latest release",
@@ -101,7 +101,7 @@ const en: TextosChangelog = {
   filtros: {
     rotulo: "Filter by type of change",
     todas: "All",
-    busca: "Search releases — e.g. WhatsApp, agenda, instalação",
+    busca: "Search releases — e.g. canais de atendimento, agenda, instalação",
     nenhuma: "No release matches this filter.",
     limpar: "Clear filters",
     resultado: (n) => (n === 1 ? "1 release" : `${n} releases`),
@@ -126,18 +126,18 @@ const en: TextosChangelog = {
 const es: TextosChangelog = {
   locale: "es-419",
   meta: {
-    titulo: "Changelog — DeskcommCRM",
-    descricao: "Todas las versiones de DeskcommCRM: qué se agregó, qué cambió, qué se corrigió y qué requiere atención antes de actualizar.",
-    tituloVersao: "Versión {v} — Changelog de DeskcommCRM",
-    descricaoVersao: "Qué cambió en la versión {v} de DeskcommCRM, publicada el {d}.",
+    titulo: "Changelog — ORBIA",
+    descricao: "Todas las versiones de ORBIA: qué se agregó, qué cambió, qué se corrigió y qué requiere atención antes de actualizar.",
+    tituloVersao: "Versión {v} — Changelog de ORBIA",
+    descricaoVersao: "Qué cambió en la versión {v} de ORBIA, publicada el {d}.",
   },
   sobretitulo: "Changelog",
-  titulo: "Todo lo que cambió en DeskcommCRM, versión por versión.",
+  titulo: "Todo lo que cambió en ORBIA, versión por versión.",
   subtitulo:
     "Cada versión cuenta qué se agregó, qué cambió y qué se corrigió — y, cuando corresponde, qué tienes que hacer antes de actualizar tu instalación.",
   aviso: {
     texto:
-      "Las notas de versión están escritas en portugués, el idioma en que se desarrolla DeskcommCRM. Tu navegador puede traducirlas, o puedes abrir esta página ya traducida.",
+      "Las notas de versión están escritas en portugués, el idioma en que se desarrolla ORBIA. Tu navegador puede traducirlas, o puedes abrir esta página ya traducida.",
     traduzir: "Abrir en Google Traductor",
   },
   maisRecente: "Versión más reciente",
@@ -146,7 +146,7 @@ const es: TextosChangelog = {
   filtros: {
     rotulo: "Filtrar por tipo de cambio",
     todas: "Todas",
-    busca: "Buscar en las versiones — ej.: WhatsApp, agenda, instalação",
+    busca: "Buscar en las versiones — ej.: canais de atendimento, agenda, instalação",
     nenhuma: "Ninguna versión coincide con este filtro.",
     limpar: "Limpiar filtros",
     resultado: (n) => (n === 1 ? "1 versión" : `${n} versiones`),

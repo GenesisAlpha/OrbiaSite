@@ -2,7 +2,7 @@
  * O CHANGELOG do produto, lido e estruturado para as páginas de versões.
  *
  * ── A fonte ─────────────────────────────────────────────────────────────────
- * O `CHANGELOG.md` da `main` do DeskcommCRM. É ele — e não a lista de Releases do
+ * O `CHANGELOG.md` da `main` do ORBIA. É ele — e não a lista de Releases do
  * GitHub — porque o CHANGELOG é a tela que o operador da VPS lê antes de atualizar
  * (`docs/doctrine/versionamento.md`), e porque as Releases têm buracos medidos em
  * 2026-09-15: a v1.20.0 teve a tag criada à mão e nenhuma Release publicada.
@@ -26,8 +26,8 @@
  */
 import { cache } from "react";
 
-export const CHANGELOG_URL = "https://raw.githubusercontent.com/melgarafael/DeskcommCRM/main/CHANGELOG.md";
-export const CHANGELOG_NO_GITHUB = "https://github.com/melgarafael/DeskcommCRM/blob/main/CHANGELOG.md";
+export const CHANGELOG_URL = "https://raw.githubusercontent.com/GenesisAlpha/OrbiaSite/main/CHANGELOG.md";
+export const CHANGELOG_NO_GITHUB = "https://github.com/GenesisAlpha/OrbiaSite/blob/main/CHANGELOG.md";
 
 /**
  * De quanto em quanto tempo a página confere se há versão nova, em segundos.

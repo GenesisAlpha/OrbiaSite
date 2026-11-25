@@ -4,15 +4,16 @@ import { PaginaInstalacao } from "@/components/instalacao/PaginaInstalacao";
 import { INSTALACAO } from "@/conteudo/rotas";
 
 export const metadata: Metadata = {
-  title: "Como instalar o DeskcommCRM na sua VPS — guia passo a passo",
-  description: "Do servidor ao WhatsApp conectado: instale o DeskcommCRM com HostGator e Supabase, usando um token de acesso para preparar o banco automaticamente.",
+  title: "ORBIA Cloud — comece sem instalar nada",
+  description: "CRM, atendimento e cobranças na nuvem. Crie sua conta, convide a equipe e comece em minutos — sem servidor, sem script e sem ficha por atendente.",
   alternates: { canonical: INSTALACAO, languages: { "pt-BR": INSTALACAO } },
   openGraph: {
-    title: "Seu CRM no ar. Um passo de cada vez.",
-    description: "Guia de instalação do DeskcommCRM: VPS, token do Supabase, domínio, WhatsApp e IA.",
+    title: "A ORBIA corre por sua conta. Você cuida do negócio.",
+    description: "Seis passos, nenhum terminal: conheça a ORBIA Cloud.",
     url: INSTALACAO,
     locale: "pt_BR",
     type: "article",
+    siteName: "ORBIA",
   },
 };
 

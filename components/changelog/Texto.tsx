@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 import type { Bloco } from "@/lib/changelog";
 
-const REPO = "https://github.com/melgarafael/DeskcommCRM";
+const REPO = "https://github.com/GenesisAlpha/OrbiaSite";
 
 /**
  * Markdown do CHANGELOG para React, sem `dangerouslySetInnerHTML`.
