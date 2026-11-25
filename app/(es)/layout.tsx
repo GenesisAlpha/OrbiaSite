@@ -5,11 +5,11 @@ import { CONTEUDO } from "@/conteudo";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://deskcomm.com.br"),
+  metadataBase: new URL("https://orbia.live"),
   title: CONTEUDO.es.meta.titulo,
   description: CONTEUDO.es.meta.descricao,
   robots: { index: false, follow: false },
-  openGraph: { type: "website", locale: "es_419", siteName: "DeskcommCRM" },
+  openGraph: { type: "website", locale: "es_419", siteName: "ORBIA" },
   alternates: {
     canonical: "/es",
     languages: {

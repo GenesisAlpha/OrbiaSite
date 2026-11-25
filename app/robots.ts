@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Claude-User", allow: "/" },
       { userAgent: "PerplexityBot", allow: "/" },
     ],
-    host: "https://deskcomm.com.br",
+    host: "https://orbia.live",
   };
 }

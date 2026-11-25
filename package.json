@@ -1,5 +1,5 @@
 {
-  "name": "deskcomm-site",
+  "name": "orbia-site",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -16,18 +16,14 @@
     "predev": "pnpm curso:gerar"
   },
   "dependencies": {
-    "@react-three/drei": "^10.7.7",
-    "@react-three/fiber": "^9.6.1",
     "next": "^16.2.11",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "three": "^0.185.1"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
-    "@types/three": "^0.185.1",
     "acorn": "^8.19.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
