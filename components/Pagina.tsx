@@ -23,6 +23,17 @@ export function Pagina({ c, idioma }: { c: Conteudo; idioma: Idioma }) {
     ? capturasEspanhol.foto
     : `${CURSO}/capturas/inbox--assumir-e-responder--p1.jpg`;
 
+  const acoesDaOferta = {
+    "pt-BR": ["Criar conta", "Pedir instalação", "Conhecer a XPAY"],
+    en: ["Create account", "Request installation", "View XPAY"],
+    es: ["Crear cuenta", "Solicitar instalación", "Conocer XPAY"],
+  }[idioma];
+  const linksDaOferta = [
+    "https://desk.orbia.live/signup",
+    "mailto:comercial@orbia.live?subject=OrbiaCRM%20self-hosted",
+    "https://xpay.expert/",
+  ];
+
   return (
     <>
       <Cabecalho c={c} idioma={idioma} pagina="home" />
@@ -211,11 +222,14 @@ export function Pagina({ c, idioma }: { c: Conteudo; idioma: Idioma }) {
               <p className="mt-6 text-lg leading-relaxed text-text-muted">{c.preco.sub}</p>
             </div>
             <div className="mt-14 grid gap-px overflow-hidden rounded-[2px] border border-border bg-border sm:grid-cols-3">
-              {c.preco.cartoes.map((x) => (
-                <div key={x.t} className="bg-bg p-7">
-                  <p className="font-bold tracking-tight">{x.t}</p>
-                  <p className="mt-2 leading-relaxed text-text-muted">{x.d}</p>
-                </div>
+              {c.preco.cartoes.map((x, indice) => (
+                <article key={x.t} className="flex flex-col items-start bg-bg p-7">
+                  <h3 className="text-xl font-bold tracking-tight">{x.t}</h3>
+                  <p className="mt-2 flex-1 leading-relaxed text-text-muted">{x.d}</p>
+                  <a href={linksDaOferta[indice]} className="mt-4 inline-flex min-h-11 items-center font-mono text-sm text-pulse underline-offset-4 hover:underline">
+                    {acoesDaOferta[indice]} <span className="ml-2" aria-hidden="true">↗</span>
+                  </a>
+                </article>
               ))}
             </div>
             <p className="mt-10 max-w-[58ch] border-l-2 border-pulse pl-5 leading-relaxed">{c.preco.fecho}</p>
