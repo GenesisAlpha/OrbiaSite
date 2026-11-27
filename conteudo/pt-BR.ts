@@ -90,15 +90,15 @@ export const ptBR: Conteudo = {
     alt: "Tela da caixa de entrada da ORBIA com o resumo que a IA deixa ao passar um cliente para a equipe",
   },
   preco: {
-    sobretitulo: "Plano",
-    titulo: "Um preço. A operação inteira.",
-    sub: "Sem ficha por atendente, sem módulo trancado, sem surpresa na fatura. O valor fica sob confirmação comercial antes da abertura geral.",
+    sobretitulo: "Planos",
+    titulo: "Escolha como usar o OrbiaCRM.",
+    sub: "Gerencie contatos, atendimento e funis com hospedagem pela Orbia ou em sua própria infraestrutura.",
     cartoes: [
-      { t: "CRM completo", d: "Funis, contatos, histórico e tarefas. Sem limites escondidos por plano." },
-      { t: "IA e atendimento", d: "Agentes que leem, sugerem e respondem com contexto — e registram cada decisão." },
-      { t: "Cobranças integradas", d: "Do fechamento à cobrança, na mesma história. Várias marcas de pagamento, uma só operação." },
+      { t: "OrbiaCRM Cloud", d: "A Orbia hospeda e mantém o CRM. Crie uma conta para começar a configurar o espaço da sua empresa." },
+      { t: "OrbiaCRM self-hosted", d: "Instalação assistida na sua infraestrutura, com configuração inicial e formação da equipe." },
+      { t: "Pagamentos com XPAY", d: "Módulo opcional para ligar o checkout ao catálogo e aos pedidos. A ativação é feita por empresa durante o piloto." },
     ],
-    fecho: "O preço exato será confirmado com a abertura comercial. O que não muda: a conta não cresce de valor só porque o time cresceu.",
+    fecho: "Conheça as opções com a equipe comercial antes de contratar.",
   },
   banner: {
     sobretitulo: "Camada de pagamentos",

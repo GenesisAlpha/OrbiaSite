@@ -95,15 +95,15 @@ export const en: Conteudo = {
     alt: "ORBIA inbox screen showing the summary the AI leaves when it hands a customer to the team",
   },
   preco: {
-    sobretitulo: "Plan",
-    titulo: "One price. The whole operation.",
-    sub: "No fee per agent, no gated module, no surprise on the invoice. The exact figure is confirmed commercially before general availability.",
+    sobretitulo: "Plans",
+    titulo: "Choose how to run OrbiaCRM.",
+    sub: "Manage contacts, conversations and pipelines on Orbia Cloud or on your own infrastructure.",
     cartoes: [
-      { t: "Full CRM", d: "Funnels, contacts, history and tasks. No hidden limits by plan." },
-      { t: "AI and conversations", d: "Agents that read, suggest and reply with context — and record every decision." },
-      { t: "Payments built in", d: "From closing the deal to collecting, in the same story. Several payment brands, one operation." },
+      { t: "OrbiaCRM Cloud", d: "Orbia hosts and maintains your CRM. Create an account to start setting up your workspace." },
+      { t: "Self-hosted OrbiaCRM", d: "Assisted installation on your infrastructure, with initial configuration and team training." },
+      { t: "Payments with XPAY", d: "An optional module that links checkout to your catalogue and orders. Activation is handled per business during the pilot." },
     ],
-    fecho: "The exact price will be confirmed with the commercial launch. What won't change: the bill doesn't grow just because the team did.",
+    fecho: "Talk to our team to discuss the options before purchasing.",
   },
   banner: {
     sobretitulo: "Payments layer",
