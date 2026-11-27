@@ -13,8 +13,8 @@ export const es: Conteudo = {
   nav: { comoFunciona: "Cómo funciona", prova: "Prueba", instalar: "Cloud", preco: "Plan", ctaInstalar: "Empezar en Cloud", curso: "Curso", guias: "Centro de ayuda", guiasCurto: "Ayuda", changelog: "Novedades", idioma: "Idioma" },
   hero: {
     sobretitulo: "ORBIA · sistema operativo de ventas",
-    h1a: "Una operación completa. ",
-    h1b: "Un solo ritmo.",
+    h1a: "Tu empresa en órbita. ",
+    h1b: "Con IA a tu lado.",
     sub: "CRM, atención y cobros conectados. La IA trabaja a tu favor con cada decisión registrada — sin planilla paralela, sin venta perdida en el camino.",
     ctaPrimario: "Empezar en Cloud",
     ctaSecundario: "Ver cómo funciona",

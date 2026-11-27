@@ -1,6 +1,6 @@
 import type { Conteudo, Idioma } from "@/conteudo";
 import { IDIOMAS } from "@/conteudo";
-import { ROTAS_CURSO, INSTALACAO, ROTAS, ancoraDaHome, type PaginaId } from "@/conteudo/rotas";
+import { ORBIA_CRM, ROTULOS_LOGIN, ROTAS_CURSO, INSTALACAO, ROTAS, ancoraDaHome, type PaginaId } from "@/conteudo/rotas";
 
 import { Logotipo } from "./Marca";
 
@@ -47,7 +47,7 @@ export function Cabecalho({ c, idioma, pagina, sufixo = "" }: { c: Conteudo; idi
               </a>
             ))}
           </nav>}
-          <a href={ROTAS_CURSO[idioma]} hrefLang={idioma} aria-label={c.curso.cta} title={c.curso.cta} className="inline-flex h-9 items-center whitespace-nowrap rounded-[2px] px-2 font-mono text-xs uppercase tracking-[0.1em] text-text transition-colors duration-150 ease-out-fast hover:bg-surface">
+          <a href={ROTAS_CURSO[idioma]} hrefLang={idioma} aria-label={c.curso.cta} title={c.curso.cta} className="hidden h-9 items-center whitespace-nowrap rounded-[2px] px-2 font-mono sm:inline-flex text-xs uppercase tracking-[0.1em] text-text transition-colors duration-150 ease-out-fast hover:bg-surface">
             {c.nav.curso}
           </a>
           <a href={ROTAS.guias[idioma]} aria-label={c.nav.guias} aria-current={guiasAtiva ? "page" : undefined} className={[
@@ -61,7 +61,10 @@ export function Cabecalho({ c, idioma, pagina, sufixo = "" }: { c: Conteudo; idi
             <span className="hidden whitespace-nowrap sm:inline xl:hidden">{c.nav.guiasCurto}</span>
             <span className="hidden whitespace-nowrap xl:inline">{c.nav.guias}</span>
           </a>
-          <a href={ancora("#instalar")} aria-label={c.nav.ctaInstalar} aria-current={pagina === "instalacao" ? "page" : undefined} className="flex h-9 items-center whitespace-nowrap rounded-[2px] bg-pulse px-3 font-mono text-xs font-bold uppercase tracking-[0.1em] text-bg transition-colors duration-150 ease-out-fast hover:bg-text sm:px-4">
+          <a href={ORBIA_CRM.login} className="inline-flex min-h-9 items-center whitespace-nowrap px-2 font-mono text-xs font-medium text-text hover:text-pulse">
+            {ROTULOS_LOGIN[idioma]}
+          </a>
+          <a href={pagina === "instalacao" ? ORBIA_CRM.signup : INSTALACAO} aria-label={c.nav.ctaInstalar} className="flex h-9 items-center whitespace-nowrap rounded-[2px] bg-pulse px-3 font-mono text-xs font-bold uppercase tracking-[0.1em] text-bg transition-colors duration-150 ease-out-fast hover:bg-text sm:px-4">
             <span className="xl:hidden">{c.nav.instalar}</span>
             <span className="hidden xl:inline">{c.nav.ctaInstalar}</span>
           </a>

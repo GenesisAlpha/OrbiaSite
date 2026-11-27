@@ -14,8 +14,8 @@ export const en: Conteudo = {
   nav: { comoFunciona: "How it works", prova: "Proof", instalar: "Cloud", preco: "Plan", ctaInstalar: "Start on Cloud", curso: "Course", guias: "Help center", guiasCurto: "Help", changelog: "What's new", idioma: "Language" },
   hero: {
     sobretitulo: "ORBIA · sales operating system",
-    h1a: "One entire operation. ",
-    h1b: "One steady rhythm.",
+    h1a: "Your business in orbit. ",
+    h1b: "AI by your side.",
     sub: "CRM, customer conversations and payments, connected. AI works in your favour with every decision on the record — no side spreadsheet, no deal lost on the way.",
     ctaPrimario: "Start on Cloud",
     ctaSecundario: "See how it works",

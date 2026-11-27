@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 /**
- * Identidade ORBIA: preto, pointilhado e pulsante.
+ * Identidade Orbia: azul profundo, violeta e ciano.
  * Editorial, sem cara de IA: serifada nos títulos, monoespaçada nos rótulos.
  */
 export default {
@@ -9,19 +9,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: "#080808",
-        surface: "#101010",
-        "surface-elevated": "#161616",
-        text: "#f2f0ec",
-        "text-muted": "#9e9b94",
-        border: "#2c2b29",
+        bg: "#0b1021",
+        surface: "#11182e",
+        "surface-elevated": "#18213b",
+        text: "#fbfaff",
+        "text-muted": "#a9b3c8",
+        border: "#343f5d",
         accent: {
           50: "#1a1a19", 100: "#242321", 200: "#35332f", 300: "#55514a",
           400: "#8a8379", 500: "#b8b0a3", 600: "#e7e1d5", 700: "#f2ede3",
           800: "#f7f3ea", 900: "#fbf8f1", 950: "#fffdf8",
         },
         warn: "#d8a15a",
-        pulse: "#d7ff3e",
+        pulse: "#00d4ff",
       },
       fontFamily: {
         sans: ["var(--font-editorial)", "Georgia", "ui-serif", "serif"],
@@ -33,7 +33,7 @@ export default {
         lg: "0 16px 40px rgba(0,0,0,0.6)",
       },
       backgroundImage: {
-        "orbia-pontos": "radial-gradient(circle, #3a3936 1px, transparent 1px)",
+        "orbia-pontos": "radial-gradient(circle, #354260 1px, transparent 1px)",
       },
       backgroundSize: {
         pontos: "18px 18px",

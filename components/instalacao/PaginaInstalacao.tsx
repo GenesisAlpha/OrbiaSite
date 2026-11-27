@@ -1,5 +1,5 @@
 import { CONTEUDO } from "@/conteudo";
-import { ROTAS_CURSO } from "@/conteudo/rotas";
+import { ORBIA_CRM, ROTAS_CURSO } from "@/conteudo/rotas";
 
 import { Cabecalho } from "../Cabecalho";
 import { Rodape } from "../Rodape";
@@ -8,8 +8,8 @@ import { Simbolo } from "../Marca";
 const PASSOS = [
   {
     n: "01",
-    titulo: "Crie sua conta",
-    texto: "Escolha um nome para o espaço da sua empresa e defina a senha do administrador. Leva menos tempo do que ler esta página.",
+    titulo: "Confirme seu e-mail",
+    texto: "Informe o nome da empresa e o seu e-mail. Depois de criar a conta, abra a mensagem de confirmação para continuar.",
   },
   {
     n: "02",
@@ -60,7 +60,7 @@ export function PaginaInstalacao() {
                   Nada de servidor, script ou SSH. Sua equipe entra, configura o funil em minutos e começa a trabalhar na nuvem, com CRM, atendimento e cobranças no mesmo lugar.
                 </p>
                 <div className="mt-9 flex flex-wrap gap-3">
-                  <a href="#comecar" className="inline-flex min-h-12 items-center rounded-[2px] bg-pulse px-6 font-mono text-xs font-bold uppercase tracking-[0.12em] text-bg">Criar minha conta <span aria-hidden className="ml-4">↓</span></a>
+                  <a href={ORBIA_CRM.signup} className="inline-flex min-h-12 items-center rounded-[2px] bg-pulse px-6 font-mono text-xs font-bold uppercase tracking-[0.12em] text-bg">Criar minha conta <span aria-hidden className="ml-4">→</span></a>
                   <a href={ROTAS_CURSO["pt-BR"]} className="inline-flex min-h-12 items-center rounded-[2px] border border-border px-5 font-mono text-xs uppercase tracking-[0.12em] hover:border-text-muted">Ver o curso →</a>
                 </div>
                 <p className="mt-6 font-mono text-xs text-text-muted">Na nuvem · sem ficha por atendente · valor comercial a confirmar</p>
@@ -68,7 +68,7 @@ export function PaginaInstalacao() {
               <div className="orbia-pontilhado relative aspect-square overflow-hidden rounded-[2px] border border-border bg-surface">
                 <div className="absolute inset-[18%] rounded-full border border-border" />
                 <div className="absolute inset-[32%] rounded-full border border-border/70" />
-                <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 animate-orbia-pulso rounded-full bg-pulse shadow-[0_0_28px_6px_rgba(215,255,62,0.3)]" />
+                <div className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 animate-orbia-pulso rounded-full bg-pulse shadow-[0_0_28px_6px_rgba(0,212,255,0.3)]" />
                 <div className="absolute bottom-5 left-5 font-mono text-[10px] uppercase tracking-[0.18em] text-text-muted">ORBIA / Cloud</div>
               </div>
             </div>
@@ -121,7 +121,7 @@ export function PaginaInstalacao() {
                 <h2 className="mt-2 text-balance text-[1.8rem] leading-tight sm:text-[2.2rem]">Sua operação, no mesmo ritmo.</h2>
                 <p className="mt-2 max-w-[52ch] leading-relaxed text-text-muted">Crie o espaço da sua empresa e descubra por que a ORBIA não é mais uma planilha com nome bonito.</p>
               </div>
-              <a href="#comecar" className="inline-flex min-h-12 items-center rounded-[2px] bg-pulse px-6 font-mono text-xs font-bold uppercase tracking-[0.12em] text-bg">Criar conta →</a>
+              <a href={ORBIA_CRM.signup} className="inline-flex min-h-12 items-center rounded-[2px] bg-pulse px-6 font-mono text-xs font-bold uppercase tracking-[0.12em] text-bg">Criar conta →</a>
             </div>
           </section>
         </div>
