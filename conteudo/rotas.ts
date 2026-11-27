@@ -29,6 +29,17 @@ export const CURSO = ROTAS_CURSO["pt-BR"];
 /** O guia de instalação editorial está disponível em português. */
 export const INSTALACAO = "/instalar";
 
+export const ORBIA_CRM = {
+  login: "https://desk.orbia.live/login",
+  signup: "https://desk.orbia.live/signup",
+} as const;
+
+export const ROTULOS_LOGIN: Record<Idioma, string> = {
+  "pt-BR": "Entrar",
+  en: "Sign in",
+  es: "Ingresar",
+};
+
 /** Âncora de uma seção da home, válida de qualquer página: `/#instalar`, `/en#instalar`. */
 export function ancoraDaHome(idioma: Idioma, fragmento: string, naHome: boolean): string {
   if (naHome) return fragmento;

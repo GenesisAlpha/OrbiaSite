@@ -7,7 +7,6 @@ import { Jornada } from "./Jornada";
 import { CURSO, ROTAS_CURSO, INSTALACAO } from "@/conteudo/rotas";
 
 import { Cabecalho } from "./Cabecalho";
-import { Mesa } from "./mesa/MesaEstatica";
 import { Rodape } from "./Rodape";
 
 // Preenchida pela configuração do Next somente após validar o conjunto inteiro.
@@ -31,7 +30,7 @@ export function Pagina({ c, idioma }: { c: Conteudo; idioma: Idioma }) {
       <main>
         {/* HERO */}
         <section className="relative overflow-x-clip orbia-pontilhado">
-          <div className="absolute inset-0 bg-bg/85" aria-hidden />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_82%_42%,rgba(122,56,255,0.21),transparent_58%),radial-gradient(ellipse_at_76%_88%,rgba(0,212,255,0.09),transparent_48%)]" aria-hidden />
           <div className="relative mx-auto max-w-[1200px] px-6 pb-16 pt-14 sm:pt-20">
             <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,42%)_minmax(0,58%)] lg:gap-4">
               <div className="min-w-0">
@@ -39,10 +38,10 @@ export function Pagina({ c, idioma }: { c: Conteudo; idioma: Idioma }) {
                   <span aria-hidden className="orbia-ponto" />
                   {c.hero.sobretitulo}
                 </p>
-                <h1 className="mt-6 text-pretty text-[2.8rem] leading-[1.03] sm:text-[3.8rem]">
+                <h1 className="mt-6 text-balance text-[clamp(2.65rem,5vw,4.25rem)] leading-[1.03]">
                   {c.hero.h1a}
                   <br />
-                  <span className="text-text-muted">{c.hero.h1b}</span>
+                  <span className="bg-gradient-to-r from-[#bda2ff] to-pulse bg-clip-text text-transparent">{c.hero.h1b}</span>
                 </h1>
                 <p className="mt-7 max-w-[34ch] text-lg leading-relaxed text-text-muted">{c.hero.sub}</p>
                 <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -55,7 +54,14 @@ export function Pagina({ c, idioma }: { c: Conteudo; idioma: Idioma }) {
                 </div>
                 <p className="mt-5 font-mono text-xs text-text-muted">{c.hero.microcopy}</p>
               </div>
-              <div className="min-w-0 lg:-mr-[8vw]"><Mesa /></div>
+              <div className="relative mx-auto aspect-square w-full max-w-[520px]" aria-hidden="true">
+                <div className="absolute inset-[19%] rounded-full bg-[radial-gradient(circle_at_36%_31%,#bfb0ff_0%,#7a38ff_24%,#2e1376_51%,#0d1028_77%)] shadow-[0_0_80px_rgba(122,56,255,0.35)]" />
+                <div className="absolute inset-[10%] rotate-[-24deg] scale-y-[0.43] rounded-full border border-pulse/80 shadow-[0_0_24px_rgba(0,212,255,0.35)]" />
+                <div className="absolute inset-[5%] rotate-[29deg] scale-y-[0.62] rounded-full border border-[#9e69ff]/60" />
+                <div className="absolute inset-[2%] rotate-[-41deg] scale-y-[0.78] rounded-full border border-dashed border-white/15" />
+                <div className="absolute left-[78%] top-[31%] size-2.5 rounded-full bg-pulse shadow-[0_0_20px_4px_rgba(0,212,255,0.45)]" />
+                <div className="absolute left-[23%] top-[67%] size-2 rounded-full bg-[#bda2ff] shadow-[0_0_18px_3px_rgba(122,56,255,0.6)]" />
+              </div>
             </div>
           </div>
         </section>

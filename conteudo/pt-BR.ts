@@ -9,8 +9,8 @@ export const ptBR: Conteudo = {
   nav: { comoFunciona: "Como funciona", prova: "Prova", instalar: "Cloud", preco: "Plano", ctaInstalar: "Começar na Cloud", curso: "Curso", guias: "Central de ajuda", guiasCurto: "Ajuda", changelog: "Novidades", idioma: "Idioma" },
   hero: {
     sobretitulo: "ORBIA · sistema operacional de vendas",
-    h1a: "Uma operação inteira. ",
-    h1b: "Um só ritmo.",
+    h1a: "Sua empresa em órbita. ",
+    h1b: "Com IA ao seu lado.",
     sub: "CRM, atendimento e cobranças conectados. A IA trabalha a seu favor, com cada decisão registrada — sem planilha paralela, sem venda perdida no caminho.",
     ctaPrimario: "Começar na Cloud",
     ctaSecundario: "Ver como funciona",
